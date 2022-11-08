@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanmpark <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hanmpark <hanmpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 21:16:38 by hanmpark          #+#    #+#             */
-/*   Updated: 2022/09/18 12:07:01 by hanmpark         ###   ########.fr       */
+/*   Updated: 2022/10/25 19:03:27 by hanmpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,14 @@
 
 void	ft_print_alphabet(void)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
+	int	i;
+	i = 97;
+	while (i <= 122)
+	{
+		write(1, &i, 1);
+		i++;
+	}
+	write(1, "\n", 1);
 }
 /*int	main(void)
 {

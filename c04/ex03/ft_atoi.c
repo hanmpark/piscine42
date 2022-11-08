@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanmpark <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hanmpark <hanmpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 17:17:23 by hanmpark          #+#    #+#             */
-/*   Updated: 2022/09/23 22:49:30 by hanmpark         ###   ########.fr       */
+/*   Updated: 2022/10/29 00:09:10 by hanmpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,11 @@ int	ft_atoi(char *str)
 		digit = digit * -1;
 	return (digit);
 }
-/*int	main()
-{
-	char str[] = "    +---+1234";
 
-	printf("%d", ft_atoi(str));
+/*#include <stdio.h>
+int	main(int ac, char **av)
+{
+	(void)ac;
+	printf("%d", ft_atoi(av[1]));
 	return (0);
 }*/
